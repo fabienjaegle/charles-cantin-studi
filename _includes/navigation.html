@@ -1,0 +1,8 @@
+<nav id="navbar" class="navbar order-last order-lg-0" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+    <ul>
+    {% for link in site.data.navigation %}
+        <li><a class="{% if link.url == page.url %}active{% endif %}" href="{{ link.url }}">{{ link.title }}</a></li>
+    {% endfor %}
+    </ul>
+    <i class="bi bi-list mobile-nav-toggle"></i>
+</nav>
