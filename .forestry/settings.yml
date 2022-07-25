@@ -5,7 +5,7 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: gallery
+  path: _gallery
   label: Gallery
   create: all
   match: "**/*"
