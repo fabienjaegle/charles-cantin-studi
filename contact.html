@@ -1,0 +1,85 @@
+---
+title: Contact
+description: Me contacter
+permalink: /contact/
+layout: default
+---
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>{{page.title}}</h2>
+      <p>{{page.description}}</p>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <div class="text-center">
+          <img src="/assets/img/charles-cantin.png" alt="Charles Cantin logo" height="200px" />
+        </div>
+      </div>
+
+      <div class="col-lg-8 mt-5 mt-lg-0">
+        <form id="contact-form" action="https://formspree.io/f/mayvrvpq" method="post" role="form" class="php-email-form">
+
+          <div class="form-group mt-3">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Votre adresse mail" required>
+          </div>
+
+          <div class="form-group mt-3">
+            <textarea class="form-control" name="message" rows="5" placeholder="Votre message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Chargement</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Merci pour votre message !</div>
+          </div>
+          <div class="text-center"><button type="submit">Envoyer</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  var form = document.getElementById("contact-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    form.querySelector('.loading').classList.add('d-block');
+    form.querySelector('.error-message').classList.remove('d-block');
+    form.querySelector('.sent-message').classList.remove('d-block');
+
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      form.querySelector('.loading').classList.remove('d-block');
+      if (response.ok) {
+        form.querySelector('.sent-message').classList.add('d-block');
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            displayError(form, data["errors"].map(error => error["message"]).join(", "));
+          } else {
+            displayError(form, "Oups ! Un problème est survenue lors de la soumission du formulaire");
+          }
+        })
+      }
+    }).catch(error => {
+      displayError(form, "Oups ! Un problème est survenue lors de la soumission du formulaire");
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+
+  function displayError(form, error) {
+    form.querySelector('.loading').classList.remove('d-block');
+    form.querySelector('.error-message').innerHTML = error;
+    form.querySelector('.error-message').classList.add('d-block');
+  }
+</script>
