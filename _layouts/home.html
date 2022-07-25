@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+{% include head.html %}
+
+<body itemscope itemtype="http://schema.org/WebPage">
+
+{% include header.html %}
+
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+      <h1>{{site.title}}</h1>
+      <h2>{{site.subtitle}}</h2>
+    </div>
+  </section>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  {% include scripts.html %}
+
+</body>
+
+</html>
