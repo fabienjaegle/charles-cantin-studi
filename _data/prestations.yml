@@ -9,13 +9,11 @@
 - title: Famille
   price: 220
   icon: group
-  description:
-  Pour la famille ou les amis jusqu'à 4 personnes, en extérieur ou en studio
-  30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu'à 2 ans)
+  description: Pour la famille ou les amis jusqu'à 4 personnes, en extérieur ou en studio. 30 euros en supplément par personne au-delà de 4 (hormis enfant jusqu'à 2 ans)
 - title: Il était une fois
   price: 160
   icon: history
-  description:
+  description: Photo de grossesse (À votre domicile, en extérieur ou en studio)
 - title: Mon bébé
   price: 100
   icon: baby-carriage
