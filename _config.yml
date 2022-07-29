@@ -22,9 +22,9 @@ title: Charles Cantin
 subtitle: Photographe
 email: contact@charlescantin.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Charles Cantin, photographe et passionné, propose ses services pour immortaliser vos
+  moments de vie. Mariage, Baptême, photos de famille, grossesse, gardez à jamais vos souvenirs sur papiers glacés.
+keywords: Charles Cantin, photographe, professionnel, Strasbourg, Alsace, Portrait, Mariage, Baptême, Grossesse, Bébé, Famille, Couple
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 social:
