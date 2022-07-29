@@ -5,12 +5,14 @@
 ### Installation
 - Installer Node.js
 - Installer Ruby : https://rubyinstaller.org/downloads/ (Windows)
-- Via une ligne de commande, installer `bundler` et `jekyll` : `gem install bundler jekyll`
+- Via un terminal de commande, installer `bundler` et `jekyll` en tapant la commande `gem install bundler jekyll`
 - Installer Visual Studio Code
 
 ### Exécution
-Cloner le projet puis ouvrir le dossier du repo dans Visual Studio Code. Ouvrir un terminal de commandes, puis taper `bundle exec jekyll serve`.
-Ceci va compiler puis exécuter en local le projet sur *localhost:4000*.
+Cloner le projet puis ouvrir le dossier du repo dans Visual Studio Code.
+Ouvrir un terminal de commande, puis taper :
+- `bundle install` pour compiler les dépendances
+- `bundle exec jekyll serve`. Ceci va compiler puis exécuter en local le projet sur *localhost:4000*.
 
 ### Déploiement
 Le déploiement se fait automatiquement via Pull Request d'une branche de développement choisie vers la branche `master`.
