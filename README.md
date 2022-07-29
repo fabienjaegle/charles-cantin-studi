@@ -17,6 +17,8 @@ Le déploiement se fait automatiquement via Pull Request d'une branche de dével
 Après acceptation de la PR, une build est automatiquement effectuée par Trigger sur le fournisseur/hébergeur Netlify.
 La partie administration du site (forestry.io) est aussi mise à jour.
 
+Le site est consultable ici : https://charles-cantin-studi.netlify.app/
+
 ### Administration
 L'administration du site se fait sur forestry.io :
 
