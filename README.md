@@ -20,6 +20,6 @@ La partie administration du site (forestry.io) est aussi mise à jour.
 ### Administration
 L'administration du site se fait sur forestry.io :
 
-![foresty.io](annexes/forestryio.png)
+![foresty.io](appendices/forestryio.png)
 
-Un compte *Editeur* a été crée pour cette occasion.
+Un compte *Editeur* a été crée à cette occasion.
