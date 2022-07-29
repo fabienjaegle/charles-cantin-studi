@@ -4,7 +4,7 @@
 
 ### Installation
 - Installer Node.js
-- Installer Ruby : https://rubyinstaller.org/downloads/ (Windows)
+- Installer la version 2.7.6-1 de Ruby : https://rubyinstaller.org/downloads/ (Windows)
 - Via un terminal de commande, installer `bundler` et `jekyll` en tapant la commande `gem install bundler jekyll`
 - Installer Visual Studio Code
 
